@@ -1,0 +1,53 @@
+/* Global reset and typography */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page Heading */
+  header h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  /* Section container */
+  .section {
+    position: relative;
+    padding: 40px 20px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+  }
+  
+  /* Color-coded labels for sections */
+  .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    background-color: darkgray;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  #chicken .title { background-color: #d9534f; }
+  #beef .title    { background-color: #2c9fc9; }
+  #sushi .title   { background-color: #f0ad4e; }
+  
+  /* Mobile Navbar Dropdown Customization */
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      background-color: #eee;
+      width: 100%;
+      position: absolute;
+      top: 50px; /* Adjust if your navbar height changes */
+      left: 0;
+      padding: 10px 0;
+    }
+  }
+  

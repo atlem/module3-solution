@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Custom CSS (placed in the css folder) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Company name -->
+        <a class="navbar-brand" href="#">Food, LLC</a>
+        <!-- Mobile menu button: visible only on extra small screens -->
+        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Mobile dropdown menu -->
+      <div class="collapse navbar-collapse" id="mobile-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Heading (anchor "top" for 'Back to Top' links) -->
+  <header class="text-center">
+    <h1 id="top">Our Menu</h1>
+  </header>
+
+  <!-- Main container for sections -->
+  <div class="container">
+    <div class="row">
+      <!-- Chicken Section -->
+      <div class="col-xs-12 col-sm-6 col-md-4 section" id="chicken">
+        <div class="title">Chicken</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <p>
+          <a href="#top">Back To Top</a>
+        </p>
+      </div>
+
+      <!-- Beef Section -->
+      <div class="col-xs-12 col-sm-6 col-md-4 section" id="beef">
+        <div class="title">Beef</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        </p>
+        <p><em>End of Beef section</em></p>
+        <p>
+          <a href="#top">Back To Top</a>
+        </p>
+      </div>
+
+      <!-- Sushi Section -->
+      <div class="col-xs-12 col-sm-12 col-md-4 section" id="sushi">
+        <div class="title">Sushi</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <p>
+          <a href="#top">Back To Top</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap JavaScript (needed for the navbar toggle) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
